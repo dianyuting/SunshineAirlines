@@ -65,4 +65,16 @@ public class UserService {
 		}
 		return result;
 	}
+	
+	public static Result findUserId(int userId) {
+		Result result=new Result("fail",null,null);
+		HashMap<String, Object> user=dao.findUserId(userId);
+		if(user!=null) {
+			result.setFlag("success");
+			result.setData(user);
+		}else{
+			result.setData("用户信息不存在");
+		}
+		return result;
+	}
 }

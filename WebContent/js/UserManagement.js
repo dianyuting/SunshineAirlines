@@ -87,5 +87,6 @@ function getUser(roleId,name,startPage,pageSize){
     })
 }
 function edit(userId){
+    localStorage.setItem("userId",userId);
     location.href = "AddUser.html";
 }

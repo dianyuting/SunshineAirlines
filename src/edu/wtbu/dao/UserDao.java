@@ -53,4 +53,14 @@ public class UserDao {
 		String sql = "UPDATE users SET `Password` = ? WHERE UserId = ?";
 		return Helper.executeUpdate(sql, new Object[] {password, userId});
 	}
+	
+	public HashMap<String, Object> findUserId(int userId){
+		String sql="SELECT * FROM users WHERE userId=?";
+		List<HashMap<String, Object>> list=Helper.executeQuery(sql, new Object[] {userId});
+		if(list!=null&&list.size()>0) {
+			return list.get(0);
+		}else {
+			return null;
+		}
+	}
 }
