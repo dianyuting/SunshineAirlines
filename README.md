@@ -21,5 +21,14 @@
 ## 4、航班计划管理
 单击管理员界面中的 “Flight Schedule Management”菜单项时，将会打开此界面。<br>
 当航班“Confirmed”状态时，通过右下方的按钮可以取消航班；当航班“Canceled”状态时，通过右下方的按钮可以确认航班。
+![image](https://github.com/user-attachments/assets/6646445a-c74f-4b0d-8712-c4dedc45ca1d)
 ## 5、用户查询
-单击管理员界面中的 “User Management”菜单项时，将会打开此界面。
+单击管理员界面中的 “User Management”菜单项时，将会打开此界面。<br>
+管理员可以通过该界面进行用户管理，根据角色和用户名称进行模糊查询。查询结果根据用户名称升序显示，并实现分页功能，每页显示10条记录。单击“Add a new user”按钮，打开“Add User”界面，可以在该界面完成创建用户操作。
+![image](https://github.com/user-attachments/assets/aaa31562-d242-4684-90e1-9cef1783e325)
+## 6、用户添加
+通过用户查询界面操作创建该界面，管理员可以通过该界面进行添加用户或编辑用户的操作。<br>
+管理员可以通过该界面添加新用户。新添加用户的Email 应符合要求且不重复，当新增的邮箱已存在时，提示信息为“邮箱重复”。管理员不必输入用户密码，用户密码为邮箱中@符号前第1-6位字符，当@符号前字符个数少于 6 位时，取@符号前所有字符。<br>
+点击“Select Photo”按钮可以上传用户照片，照片能够存储到系统中，该系统仅允许存储小于等于 100KB 的照片。<br>
+用户信息填写完毕后单击“Submit”按钮对用户进行保存。点击“Cancel”按钮，取消编辑同时返回至上一级界面。
+![image](https://github.com/user-attachments/assets/4b78c5c8-3827-4271-87ea-3c164e1c8b2c)
